@@ -27,8 +27,8 @@ int main() {
             break;
           }
           else if(sum == s) {
-            if(j > max) {
-              max = j;
+            if(j-1 >= max) {
+              max = j-1;
               pos = k;
             } 
             break;
