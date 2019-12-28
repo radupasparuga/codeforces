@@ -8,14 +8,13 @@ int main() {
   int t;
   cin >> t;
   for(int i = 0; i < t; ++i) {
-    int n, k, L, R;
+    int n, k, L, R, b=0, a=0, b_sum = 0;
     cin >> n >> k;
     if(n%k == 0){
       cout << n << endl;
     }else {
       L = n/k;
       R = (n/k)+1;
-      int b=0, a=0, b_sum = 0;
       while(b < k/2) {
         b_sum += R;
         b++;
